@@ -1,0 +1,20 @@
+{
+  "name": "the-serverless-course",
+  "version": "1.0.0",
+  "description": "The Serverless Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "serverless deploy --aws-profile serverless-local"
+  },
+  "keywords": [
+    "AWS",
+    "serverless",
+    "course"
+  ],
+  "author": "Dídac García (https://didaquis.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "^1.54.0"
+  }
+}

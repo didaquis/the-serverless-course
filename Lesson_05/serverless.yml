@@ -1,0 +1,15 @@
+service: gettogether
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: eu-west-1
+  stage: dev
+
+functions: 
+  salute:
+    handler: src/functions/salute.handler
+    events:
+      - http:
+          path: api/salute/{name}
+          method: get
