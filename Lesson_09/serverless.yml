@@ -1,0 +1,29 @@
+service: gettogether
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: eu-west-1
+  stage: dev
+
+functions: 
+  getGetTogethers:
+    handler: src/functions/getGetTogethers.handler
+    events:
+      - http:
+          path: api/getGetTogethers
+          method: get
+
+resources:
+  Resources:
+    GetTogethersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: gettogethers
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: N
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
