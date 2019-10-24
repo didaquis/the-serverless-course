@@ -25,4 +25,8 @@ dynamodb
 	.then(() => console.log("Save data on database: done"))
 	.catch(e => console.log(e));
 
-// AWS_PROFILE=serverless-local node seedGetTogethers.js
+/*
+ * For saving a register on database, execute in terminal: 
+ *
+ * AWS_PROFILE=serverless-local node seedGetTogethers.js
+ */
