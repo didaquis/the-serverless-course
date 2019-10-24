@@ -1,0 +1,29 @@
+{
+  "name": "the-serverless-course",
+  "version": "1.0.0",
+  "description": "The Serverless Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "serverless deploy --aws-profile serverless-local",
+    "test:integration": "jest ./tests/*",
+    "test:acceptance": "TEST_MODE=http jest ./tests/*"
+  },
+  "keywords": [
+    "AWS",
+    "serverless",
+    "course"
+  ],
+  "author": "Dídac García (https://didaquis.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "jest": "^24.9.0",
+    "serverless": "^1.54.0",
+    "superagent": "^5.1.0",
+    "superagent-promise": "^1.1.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.555.0"
+  }
+}
