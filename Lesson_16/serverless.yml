@@ -14,7 +14,7 @@ custom:
   defaultRegion: eu-west-1
   defaultStage: dev${env:SLSUSER, ""}
   getTogethersTableName: ${self:provider.stage}-gettogethers
-  getTogethersTableNamePath: ${self:custom.getTogethersTableName}/${self:provider.stage}/${self:custom.getTogethersTableName}
+  getTogethersTableNamePath: gettogethers/${self:provider.stage}/secureTableName
   joinGetTogetherSnsTopicName: ${self:provider.stage}-joingettogethers
   joinGetTogetherSnsTopic: arn:aws:sns:#{AWS::Region}:#{AWS::AccountId}:${self:custom.joinGetTogetherSnsTopicName}
 
@@ -29,6 +29,9 @@ functions:
       - Effect: Allow
         Action: dynamodb:scan
         Resource: arn:aws:dynamodb:#{AWS::Region}:#{AWS::AccountId}:table/${self:custom.getTogethersTableName}
+      - Effect: Allow
+        Action: ssm:GetParameters*
+        Resource: arn:aws:ssm:#{AWS::Region}:#{AWS::AccountId}:parameter/gettogethers/${self:provider.stage}/*
     environment:
       getTogethersTableName: ${self:custom.getTogethersTableNamePath}
   notifyOrganiser:
