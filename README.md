@@ -2,6 +2,8 @@
 
 Esto es un repositorio con ejercicios creados durante un curso presencial impartido por [Vicenç García Altés](https://github.com/vgaltes).
 
+Website: https://theserverlesscourse.com
+
 Repo de referencia: https://github.com/vgaltes/TheServerlessCourseSourceCodeBarcelona
 
 Puedes descargar las diapositivas del curso [aquí](./docs-assets/Serverless-Course-Bcn.pdf).
