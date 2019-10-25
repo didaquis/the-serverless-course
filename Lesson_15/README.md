@@ -17,4 +17,3 @@ Name: /gettogethers/devdi/secureTableName (type: secure string; value: devdi-get
 
 ### Testar:
 curl https://i7kfw355ca.execute-api.eu-west-1.amazonaws.com/devdi/api/getTogether --data '{"getTogetherId": "1", "userEmail":"someone@example.com"}'
-
