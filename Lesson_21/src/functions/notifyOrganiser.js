@@ -5,7 +5,7 @@ const correlationIds = require('@dazn/lambda-powertools-middleware-correlation-i
 const handler = async (event, context) => {
 	const orderPlaced = JSON.parse(event.Records[0].Sns.Message);
 
-	Log.info("Notified organiser", { });
+	Log.info('Notified organiser', { getTogetherId: orderPlaced.getTogetherId, orderId: orderPlaced.orderId, userEmail: orderPlaced.userEmail});
 
 	return "Done!";
 };
