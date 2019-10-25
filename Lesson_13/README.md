@@ -1,5 +1,7 @@
+### Para hacer deploy:
 SLSUSER=di npm run deploy
 
+### Para introducir datos en DynamoDB
 AWS_PROFILE=serverless-local node seedGetTogethers.js devdi-gettogethers
 
 
