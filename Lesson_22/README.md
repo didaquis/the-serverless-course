@@ -20,7 +20,13 @@ Name: /gettogethers/devdi/secureTableName (type: secure string; value: devdi-get
 The sls remove command will remove the deployed service, defined in your current working directory, from the provider: `npx serverless remove`
 
 Navegar hasta: AWS > s3 > buckets 
-Borra todos los buckets.
+Borrar todos los buckets.
 
 Luego navegar hasta: AWS > CloudFormation > Stacks
-Y borra todos los stacks.
+Y borrar todos los stacks.
+
+Luego navegar hasta: AWS > CloudWatch > Registros
+Y borrar todos los grupos de registros.
+
+Luego navegar hasta: AWS > CloudWatch > Reglas
+Y borrar todos las reglas.
