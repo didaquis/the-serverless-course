@@ -7,6 +7,8 @@ SLSUSER=di npx sls package --aws-profile serverless-local
 ### Para introducir datos en DynamoDB
 AWS_PROFILE=serverless-local node seedGetTogethers.js devdi-gettogethers
 
+### Execute
+https://i7kfw355ca.execute-api.eu-west-1.amazonaws.com/devdi/api/sayHello
 
 ### Secret Manager
 Navegar hasta: AWS > System Manager > Parameter Store
