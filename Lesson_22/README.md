@@ -16,5 +16,11 @@ Navegar hasta: AWS > System Manager > Parameter Store
 Name: /gettogethers/devdi/secureTableName
 Name: /gettogethers/devdi/secureTableName (type: secure string; value: devdi-gettogethers)
 
-### Remove all lambda functions
-The sls remove command will remove the deployed service, defined in your current working directory, from the provider: `serverless remove`
+### Remove all lambda functions and all stack
+The sls remove command will remove the deployed service, defined in your current working directory, from the provider: `npx serverless remove`
+
+Navegar hasta: AWS > s3 > buckets 
+Borra todos los buckets.
+
+Luego navegar hasta: AWS > CloudFormation > Stacks
+Y borra todos los stacks.
