@@ -2,7 +2,6 @@
 SLSUSER=di npm run deploy
 
 ### Para hacer package:
-npx sls package --aws-profile serverless-local
 SLSUSER=di npx sls package --aws-profile serverless-local
 
 ### Para introducir datos en DynamoDB
